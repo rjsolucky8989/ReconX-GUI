@@ -119,7 +119,7 @@ results/example.com/
 
 ## 🛠 Recon Modules Used
 
-| ID | Tool           | Purpose                                 |
+| ID | Tool           | Purpose                                  |
 |----|----------------|------------------------------------------|
 | 1  | WHOIS          | Domain registration info                 |
 | 2  | Subfinder      | Subdomain enumeration                    |
@@ -130,7 +130,7 @@ results/example.com/
 | 7  | nmap (Full)    | Service detection + OS detection         |
 | 8  | nmap (Vuln)    | Vulnerability scanning via NSE           |
 | 9  | nmap (Enum)    | Enumeration for http/smtp                |
-| 10 | nmap(FW Bypass)| Firewall evasion test                   |
+| 10 | nmap(FW Bypass)| Firewall evasion test                    |
 | 11 | nmap (SSL)     | SSL cipher enumeration                   |
 | 12 | feroxbuster    | Directory/file brute-forcing             |
 
@@ -147,8 +147,8 @@ results/example.com/
 ## 👨‍💻 Author
 
 **Rushi Solanki**  
-Cyber Security Analyst  
-📫 [rushisolanki@protonmail.com](mailto:rushisolanki@protonmail.com)
+Cyber Security Analyst & Consultant
+📫 [solanki.rushi81@gmail.com](mailto:solanki.rushi81@gmail.com)
 
 ---
 
