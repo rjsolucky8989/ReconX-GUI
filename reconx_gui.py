@@ -2,8 +2,8 @@
 """
 RECONX GUI – Automated Red‑Team Recon Engine
 Version : 1.7.0‑gui (stable)
-Author  : Rushi Solanki | Cyber‑Security Analyst
-Contact : rushisolanki@protonmail.com
+Author  : Rushi Solanki | Cyber‑Security Analyst & Consultant
+Contact : solanki.rushi81@gmail.com
 """
 
 from __future__ import annotations
@@ -36,17 +36,20 @@ from termcolor import colored
 # ── Recon Modules ─────────────────────────────
 MODULES = {
     1: ("WHOIS",          "whois {target}"),
-    2: ("Subfinder",      "subfinder -d {target} -silent"),
-    3: ("DNSRecon",       "dnsrecon -d {target} -t brt"),
-    4: ("dig",            "dig {target} ANY +noall +answer"),
-    5: ("httpx",          "httpx -u https://{target} -status-code -tech-detect"),
-    6: ("Nuclei",         "nuclei -u https://{target} -severity critical,high,medium"),
-    7: ("Nmap Full",      "nmap -T4 -A -sV -Pn {target}"),
-    8: ("Nmap Vuln",      "nmap -T4 --script vuln {target}"),
-    9: ("Nmap Enum",      "nmap -T4 --script http-enum,smtp-enum-users {target}"),
-   10: ("Nmap FW‑Bypass", "nmap -T4 --script firewall-bypass {target}"),
-   11: ("Nmap SSL",       "nmap -T4 --script ssl-enum-ciphers {target}"),
-   12: ("feroxbuster",    "feroxbuster -u https://{target} -C 403,404"),
+    2: ("WhatWeb",        "whatweb {target}"),
+    3: ("Subfinder",      "subfinder -d {target} -silent"),
+    4: ("DNSRecon",       "dnsrecon -d {target} -t brt"),
+    5: ("dig",            "dig ANY {target} +noall +answer @8.8.8.8"),
+    6: ("Nikto",          "nikto -h https://{target}"),
+    7: ("httpx",          "httpx -u https://{target} -status-code -tech-detect"),
+    8: ("Nuclei",         "nuclei -u https://{target} -severity critical,high,medium"),
+    9: ("Nmap Full",      "nmap -T4 -A -sV -Pn {target}"),
+   10: ("Nmap Vuln",      "nmap -T4 --script vuln {target}"),
+   11: ("Nmap Enum",      "nmap -T4 --script http-enum,smtp-enum-users {target}"),
+   12: ("Nmap FW‑Bypass", "nmap -T4 --script firewall-bypass {target}"),
+   13: ("Nmap SSL",       "nmap -T4 --script ssl-enum-ciphers {target}"),
+   15: ("dirb",           "dirb https://{target}"),
+   16: ("feroxbuster",    "feroxbuster -u https://{target} -C 403,404"),
 }
 REQUIRED_TOOLS = [cmd.split()[0] for _, cmd in MODULES.values()]
 

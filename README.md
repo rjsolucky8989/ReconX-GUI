@@ -46,7 +46,13 @@
 Install via pip:
 
 ```bash
+cd ReconX
+
 pip install -r requirements.txt
+
+Also, for systems where PyQt5 doesn’t install via pip, use:
+
+sudo apt install python3-pyqt5 pyqt5-dev-tools qttools5-dev-tools
 ```
 
 **requirements.txt:**
@@ -55,6 +61,27 @@ pip install -r requirements.txt
 PyQt5
 termcolor
 ```
+
+### 📚 Recon Modules
+---
+
+## 💻 Running the Tool
+
+### Standard Usage
+
+```bash
+python3 reconx_gui.py
+```
+
+### Headless (Server/No GUI)
+
+```bash
+xvfb-run -a python3 reconx_gui.py
+```
+
+> ❗ If you're running on Linux without a GUI, you must use `xvfb-run`.
+
+---
 
 ### 🔨 External Tools Required
 
@@ -71,29 +98,9 @@ Ensure the following recon tools are installed and in your system’s `$PATH`:
 
 You can install them using package managers like `apt`, `brew`, or directly from their GitHub releases.
 
----
-
-## 💻 Running the Tool
-
-### Standard Usage
-
-```bash
-python3 reconx_gui1.py
-```
-
-### Headless (Server/No GUI)
-
-```bash
-xvfb-run -a python3 reconx_gui1.py
-```
-
-> ❗ If you're running on Linux without a GUI, you must use `xvfb-run`.
-
----
-
 ## 🧪 How to Use
 
-1. **Set Target** – Use the “Set Target” button to input a domain or IP.
+1. **Set Target** – Use the “Set Target” button to input a domain(without protocol) or IP.
 2. **Choose Modules** – Check one or more modules from the left panel.
 3. **Run Recon** – Click "▶ Run" to start. Logs will display live output.
 4. **View Results** – Output saved in a per-target directory.
