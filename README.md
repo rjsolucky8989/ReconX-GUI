@@ -12,7 +12,7 @@
 ## 🚀 Features
 
 - Modern PyQt5-based interface
-- Supports 12 essential recon modules:
+- Supports 15 essential recon modules:
   - WHOIS
   - Subfinder
   - DNSRecon
@@ -20,6 +20,9 @@
   - httpx
   - nuclei
   - nmap 
+  - whatweb
+  - nikto
+  - dirb
   - feroxbuster
 - Multi-module execution with progress tracking
 - Live output logging per tool
@@ -31,7 +34,7 @@
 
 ## 🖼️ GUI Preview
 
-> ![Sample GUI Screenshot](https://via.placeholder.com/800x400.png?text=GUI+Screenshot+Placeholder)
+> ![ReconX GUI](logo_reconx.png)
 
 ---
 
@@ -94,6 +97,9 @@ Ensure the following recon tools are installed and in your system’s `$PATH`:
 - `httpx`
 - `nuclei`
 - `nmap`
+- `whatweb`
+- `nikto`
+- `dirb`
 - `feroxbuster`
 
 You can install them using package managers like `apt`, `brew`, or directly from their GitHub releases.
@@ -126,20 +132,23 @@ results/example.com/
 
 ## 🛠 Recon Modules Used
 
-| ID | Tool           | Purpose                                  |
-|----|----------------|------------------------------------------|
-| 1  | WHOIS          | Domain registration info                 |
-| 2  | Subfinder      | Subdomain enumeration                    |
-| 3  | DNSRecon       | DNS brute-forcing and records            |
-| 4  | dig            | DNS information (ANY query)              |
-| 5  | httpx          | HTTP probing and tech detection          |
-| 6  | nuclei         | Template-based vulnerability scanning    |
-| 7  | nmap (Full)    | Service detection + OS detection         |
-| 8  | nmap (Vuln)    | Vulnerability scanning via NSE           |
-| 9  | nmap (Enum)    | Enumeration for http/smtp                |
-| 10 | nmap(FW Bypass)| Firewall evasion test                    |
-| 11 | nmap (SSL)     | SSL cipher enumeration                   |
-| 12 | feroxbuster    | Directory/file brute-forcing             |
+| ID  | Tool             | Purpose                                      |
+|-----|------------------|----------------------------------------------|
+| 1   | WHOIS            | Domain registration info                     |
+| 2   | Subfinder        | Subdomain enumeration                        |
+| 3   | DNSRecon         | DNS brute-forcing and records                |
+| 4   | dig              | DNS information (ANY query)                  |
+| 5   | httpx            | HTTP probing and tech detection              |
+| 6   | nuclei           | Template-based vulnerability scanning        |
+| 7   | nmap (Full)      | Service detection + OS detection             |
+| 8   | nmap (Vuln)      | Vulnerability scanning via NSE               |
+| 9   | nmap (Enum)      | Enumeration for http/smtp                    |
+| 10  | nmap (FW Bypass) | Firewall evasion test                        |
+| 11  | nmap (SSL)       | SSL cipher enumeration                       |
+| 12  | feroxbuster      | Directory/file brute-forcing                 |
+| 13  | WhatWeb          | Web technology fingerprinting                |
+| 14  | Nikto            | Web server vulnerability scanning            |
+| 15  | dirb             | Basic directory brute-forcing                |
 
 ---
 
